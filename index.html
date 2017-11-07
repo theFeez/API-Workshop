@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>TechKnights API Demo</title>
+     <meta name="description" content="DESCRIPTION">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div class="container">
+     <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <form class="form-inline text-center" id="urlForm">
+            <input type="text" class="form-control" id="url" placeholder="Image URL">
+           <button type="submit" class="btn btn-primary">Get Tags</button>
+        </form>
+      </br>
+        <div class="thumbnail">
+          <img id="pic" src="">
+          <div class="caption">
+            <h3>Tags</h3>
+            <p id="concepts"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+  <script src="js/scripts.js"></script>
+ </body>
+
+ </html>
